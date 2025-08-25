@@ -3,24 +3,41 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-red: #dc1e1e;
+  --charcoal: #23272a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-red: var(--primary-red);
+  --color-primary-red-dark: #b00d0d;
+  --color-charcoal: var(--charcoal);
+  --font-sans: system-ui, sans-serif;
+  --font-poppins: var(--font-poppins), system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-work-sans);
+}
+
+.bg-dots {
+  opacity: 0.08;
+  background-image: radial-gradient(currentColor 1px, #0000 0);
+  background-size: 16px 16px;
+}
+.bg-square {
+  background-image:
+    linear-gradient(to right, #cccccc 1px, transparent 1px),
+    linear-gradient(to bottom, #cccccc 1px, transparent 1px);
+  background-size: 10px 10px;
+  opacity: 0.10; 
+}
+.radial-gradient-bg {
+  background-image:
+    radial-gradient(600px 400px at -10% 10%, #d32f2f33, #0000 60%),
+    radial-gradient(800px 300px at 80% -20%, #d32f2f19, #0000 60%); /* A lighter shade or lower alpha red */
+  background-color: #fff;
 }

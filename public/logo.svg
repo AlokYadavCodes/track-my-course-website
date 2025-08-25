@@ -1,0 +1,35 @@
+<svg viewBox="28 28 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Track My Course Logo" role="img">
+  <defs>
+    <!-- Drop Shadow for Badge (unchanged) -->
+    <filter id="badgeShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Brand Gradient (example: red-600 to pink-600) -->
+    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Single Red Gradient Background (cropped perfectly) -->
+  <rect x="28" y="28" width="200" height="200" rx="44" fill="url(#brandRed)"/>
+
+  <!-- Foreground Content (unchanged) -->
+  <g transform="translate(-17, -33) scale(1.1)">
+    <g transform="translate(89, 91)">
+      <path d="M0 4A4 4 0 0 1 4 0Q40 -1.5 76 0A4 4 0 0 1 80 4A4 4 0 0 1 76 8Q40 6.5 4 8A4 4 0 0 1 0 4Z" fill="white"/>
+    </g>
+    <g transform="translate(79, 102)">
+      <path d="M0 4A4 4 0 0 1 4 0Q50 -1.9 96 0A4 4 0 0 1 100 4A4 4 0 0 1 96 8Q50 6.9 4 8A4 4 0 0 1 0 4Z" fill="white"/>
+    </g>
+    <g transform="translate(69.5, 112) scale(4.3)">
+      <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 0 14.285 0 14.285 0C14.285 0 5.35042 0 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C0 5.35042 0 10 0 10C0 10 0 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="white"/>
+      <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="url(#brandRed)"/>
+    </g>
+    <g transform="translate(184, 186) scale(1.8)" filter="url(#badgeShadow)">
+      <circle cx="0" cy="0" r="12" fill="url(#brandRed)" stroke="white" stroke-width="2"/>
+      <path d="M-5 0 L-1 4 L6 -4" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
