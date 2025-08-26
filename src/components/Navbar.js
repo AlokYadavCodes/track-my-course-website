@@ -24,6 +24,7 @@ export default function Navbar() {
               alt="Track My Course Logo"
               width={36}
               height={36}
+              priority
             />
             <span className="font-poppins text-primary-red ml-2 text-lg leading-tight font-bold tracking-tight md:text-2xl">
               Track My Course
@@ -58,6 +59,7 @@ export default function Navbar() {
                   alt="Chrome Logo"
                   width={32}
                   height={32}
+                  priority
                 />
               </span>
               <span className="flex size-5 items-center justify-center lg:hidden">
