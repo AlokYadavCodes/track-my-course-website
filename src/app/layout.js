@@ -21,6 +21,11 @@ export const metadata = {
   title: "Track My Course",
   description:
     "Turn YouTube playlists into structured, trackable learning courses.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

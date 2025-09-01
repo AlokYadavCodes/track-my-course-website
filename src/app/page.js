@@ -8,9 +8,8 @@ export default function Home() {
     <>
       <main className="overflow-x-hidden">
         <p className="sr-only">
-          TrackMyCourse is a free Chrome extension that converts YouTube
-          playlists into structured courses, tracks your progress, and helps you
-          finish faster.
+          TrackMyCourse is a free Chrome extension that turns YouTube playlists
+          into structured courses and tracks your progress from start to finish.
         </p>
         <Hero />
         <Features />
