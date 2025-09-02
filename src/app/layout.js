@@ -26,6 +26,38 @@ export const metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+  openGraph: {
+    title: "TrackMyCourse",
+    description:
+      "Turn YouTube playlists into structured, trackable learning courses.",
+    url: "https://www.trackmycourse.online",
+    siteName: "TrackMyCourse",
+    images: [
+      {
+        url: "https://www.trackmycourse.online/og.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TrackMyCourse",
+    description:
+      "Turn YouTube playlists into structured, trackable learning courses.",
+    site: "@alokcodes",
+    creator: "@alokcodes",
+    images: [
+      {
+        url: "https://www.trackmycourse.online/og.png",
+        alt: "TrackMyCourse logo",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
