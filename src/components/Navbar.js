@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* CTA + Mobile Menu Button */}
           <div className="flex items-center space-x-3">
             <Link
-              href="#"
+              href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
               className="flex shrink-0 transform items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-pink-600 pr-2 text-sm font-medium text-white shadow-sm shadow-red-400/30 transition-transform hover:scale-101 hover:from-red-700 hover:to-pink-700"
             >
               <span className="rounded-full bg-white p-0.5 shadow-sm">
@@ -66,9 +66,8 @@ export default function Navbar() {
                 <Download size={18} />
               </span>
               <span className="hidden lg:inline">
-                {/* Add to Chrome{" "} */}
-                Coming Soon
-                {/* <span className="hidden lg:inline">- It's Free</span> */}
+                Add to Chrome{" "}
+                <span className="hidden lg:inline">- It&apos;s Free</span>
               </span>
             </Link>
 

@@ -23,7 +23,7 @@ export default function ContactPage() {
           {/* CTA Buttons */}
           <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:support@trackmycourse.app"
+              href="mailto:alokkumaryadav.cse@gmail.com"
               className="rounded-full bg-gradient-to-r from-red-600 to-pink-600 px-6 py-3 font-semibold text-white transition hover:from-red-700 hover:to-pink-700"
             >
               Email Support

@@ -99,12 +99,11 @@ export default function InAction() {
 
             <div className="mt-6 flex justify-center">
               <Link
-                href="#"
+                href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
                 aria-label="Add TrackMyCourse Chrome Extension"
                 className="rounded-full bg-gradient-to-r from-red-600 to-pink-600 px-8 py-3 font-semibold text-white shadow-lg transition hover:from-red-700 hover:to-pink-700 hover:shadow-xl"
               >
-                {/* Add to Chrome */}
-                Coming Soon
+                Add to Chrome
               </Link>
             </div>
           </div>

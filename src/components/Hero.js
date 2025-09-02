@@ -40,7 +40,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Link
-              href="#"
+              href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
               aria-label="Add TrackMyCourse Chrome Extension"
               className="flex h-12.5 shrink-0 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-pink-600 px-4 py-0.5 text-base font-medium text-nowrap text-white shadow-sm shadow-red-400/30 transition-transform hover:scale-102 hover:from-red-700 hover:to-pink-700"
             >
@@ -52,8 +52,7 @@ export default function Hero() {
                   height={32}
                 />
               </span>
-              {/* Add to Chrome */}
-              Coming Soon
+              Add to Chrome
             </Link>
 
             <Link

@@ -39,11 +39,10 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 <li>
                   <Link
-                    href="#"
+                    href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
                     className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text font-medium text-transparent hover:opacity-80"
                   >
-                    {/* Add to Chrome */}
-                    Coming Soon
+                    Add to Chrome
                   </Link>
                 </li>
                 <li>
