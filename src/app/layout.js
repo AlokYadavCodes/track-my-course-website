@@ -18,9 +18,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Track My Course",
+  title: "Track My Course: YouTube Playlist Progress Tracker",
   description:
-    "Turn YouTube playlists into structured, trackable learning courses.",
+    "TrackMyCourse is a YouTube playlist tracker that turns playlists into structured online learning courses. Track your video progress, manage study playlists, and boost your learning efficiently.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

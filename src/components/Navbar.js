@@ -1,11 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Download } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [isFirefox, setIsFirefox] = useState(false);
+
+  useEffect(() => {
+    const ua = navigator.userAgent;
+    setIsFirefox(/firefox/i.test(ua));
+  }, []);
 
   return (
     <nav
@@ -50,12 +56,12 @@ export default function Navbar() {
           {/* CTA + Mobile Menu Button */}
           <div className="flex items-center space-x-3">
             <Link
-              href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
+              href={isFirefox ? "https://addons.mozilla.org/en-US/firefox/addon/trackmycourse/" : "https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"}
               className="flex shrink-0 transform items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-pink-600 pr-2 text-sm font-medium text-white shadow-sm shadow-red-400/30 transition-transform hover:scale-101 hover:from-red-700 hover:to-pink-700"
             >
               <span className="rounded-full bg-white p-0.5 shadow-sm">
                 <Image
-                  src="/chromeLogo.svg"
+                  src={isFirefox ? "/firefoxLogo.svg" : "/chromeLogo.svg"}
                   alt="Chrome Logo"
                   width={32}
                   height={32}
@@ -66,7 +72,7 @@ export default function Navbar() {
                 <Download size={18} />
               </span>
               <span className="hidden lg:inline">
-                Add to Chrome{" "}
+                {isFirefox ? "Add to Firefox " : "Add to Chrome "}
                 <span className="hidden lg:inline">- It&apos;s Free</span>
               </span>
             </Link>
@@ -88,9 +94,8 @@ export default function Navbar() {
 
         {/* Mobile links */}
         <div
-          className={`flex flex-col space-y-3 pt-2 pb-4 transition-opacity duration-300 md:hidden ${
-            open ? "opacity-100" : "pointer-events-none opacity-0"
-          }`}
+          className={`flex flex-col space-y-3 pt-2 pb-4 transition-opacity duration-300 md:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"
+            }`}
         >
           <Link
             href="/#features"

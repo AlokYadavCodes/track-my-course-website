@@ -65,15 +65,35 @@ const faqs = [
       </>
     ),
   },
-  {
-    question: "Which browsers support Track My Course?",
-    answer: (
-      <>
-        Currently, the Track My Course extension works only on Google
-        Chrome.
-      </>
-    ),
-  },
+{
+  question: "Which browsers support Track My Course?",
+  answer: (
+    <>
+      Track My Course works on Google Chrome and Chromium-based browsers like Edge, Brave, and Vivaldi. You can install it from the{" "}
+      <a
+        href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary-red underline hover:opacity-80"
+      >
+        Chrome Web Store
+      </a>
+      .  
+      <br />
+      It also works on Firefox and Firefox-based browsers like Waterfox, LibreWolf, and Zen Browser. Get it from the{" "}
+      <a
+        href="https://addons.mozilla.org/en-US/firefox/addon/trackmycourse"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary-red underline hover:opacity-80"
+      >
+        Firefox Add-ons Store
+      </a>
+      .
+    </>
+  ),
+}
+,
   {
     question: "Are there other extensions doing the same?",
     answer: (

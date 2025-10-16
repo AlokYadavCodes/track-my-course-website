@@ -1,9 +1,13 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { headers } from 'next/headers';
 
-export default function Hero() {
+export default async function Hero() {
+  const headersList = await headers()
+  const userAgent = headersList.get('user-agent')
+  const isFirefox = userAgent.includes('Firefox');
+
   return (
     <section className="radial-gradient-bg relative bg-white pt-32 pb-8 lg:pt-40">
       <div className="bg-dots pointer-events-none absolute inset-0"></div>
@@ -39,21 +43,52 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-            <Link
-              href="https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
-              aria-label="Add TrackMyCourse Chrome Extension"
-              className="flex h-12.5 shrink-0 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-pink-600 px-4 py-0.5 text-base font-medium text-nowrap text-white shadow-sm shadow-red-400/30 transition-transform hover:scale-102 hover:from-red-700 hover:to-pink-700"
-            >
-              <span className="rounded-full bg-white p-0.5 shadow-sm">
-                <Image
-                  src="/chromeLogo.svg"
-                  alt="Chrome Logo"
-                  width={32}
-                  height={32}
-                />
-              </span>
-              Add to Chrome
-            </Link>
+            {/* Main CTA */}
+            <div className="flex items-center gap-3">
+              {/* Primary Extension Button */}
+              <Link
+                href={
+                  isFirefox
+                    ? "https://addons.mozilla.org/en-US/firefox/addon/trackmycourse"
+                    : "https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
+                }
+                target="_blank"
+                aria-label={`Add TrackMyCourse ${isFirefox ? "Firefox" : "Chrome"} Extension`}
+                className="flex flex-grow h-12.5 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-pink-600 px-5 text-base font-medium text-nowrap text-white shadow-sm shadow-red-400/30 transition-transform hover:scale-102 hover:from-red-700 hover:to-pink-700"
+              >
+                {/* Current Browser Logo */}
+                <span className="rounded-full bg-white p-0.5 shadow-sm">
+                  <Image
+                    src={isFirefox ? "/firefoxLogo.svg" : "/chromeLogo.svg"}
+                    alt={isFirefox ? "Firefox Logo" : "Chrome Logo"}
+                    width={28}
+                    height={28}
+                  />
+                </span>
+                <span>{isFirefox ? "Add to Firefox" : "Add to Chrome"}</span>
+              </Link>
+
+              {/* Secondary Browser Logo */}
+              <Link
+                href={
+                  isFirefox
+                    ? "https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin"
+                    : "https://addons.mozilla.org/en-US/firefox/addon/trackmycourse"
+                }
+                target="_blank"
+                aria-label={`View ${isFirefox ? "Chrome" : "Firefox"} Extension`}
+                className="rounded-full bg-white p-1 shadow-sm hover:scale-105 transition-transform"
+              >
+                <span>
+                  <Image
+                    src={isFirefox ? "/chromeLogo.svg" : "/firefoxLogo.svg"}
+                    alt={isFirefox ? "Chrome Logo" : "Firefox Logo"}
+                    width={32}
+                    height={32}
+                  />
+                </span>
+              </Link>
+            </div>
 
             <Link
               href="/#features"

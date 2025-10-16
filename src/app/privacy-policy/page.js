@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p className="mt-2 text-gray-600 md:text-lg">
               If you have any questions regarding your privacy, please reach out via email at 
-              <a href="mailto:support@trackmycourse.app" className="text-red-600 hover:underline"> support@trackmycourse.app</a>.
+              <a href="mailto:trackmycourse1@gmail.com" className="text-red-600 hover:underline"> trackmycourse1@gmail.com</a>.
             </p>
           </div>
         </div>

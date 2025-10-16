@@ -47,6 +47,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
+                    href="https://addons.mozilla.org/en-US/firefox/addon/trackmycourse/"
+                    className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text font-medium text-transparent hover:opacity-80"
+                  >
+                    Add to Firefox
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="#features"
                     className="hover:text-primary-red text-gray-600"
                   >
