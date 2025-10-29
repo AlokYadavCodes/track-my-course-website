@@ -41,3 +41,10 @@ body {
     radial-gradient(800px 300px at 80% -20%, #d32f2f19, #0000 60%); /* A lighter shade or lower alpha red */
   background-color: #fff;
 }
+
+@keyframes moveBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
