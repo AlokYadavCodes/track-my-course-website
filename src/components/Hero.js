@@ -9,21 +9,10 @@ export default async function Hero() {
   const isFirefox = userAgent.includes('Firefox');
 
   return (
-    <section className="radial-gradient-bg relative bg-white pt-24 pb-8 lg:pt-24">
+    <section className="radial-gradient-bg relative bg-white pt-32 pb-8 lg:pt-40">
       <div className="bg-dots pointer-events-none absolute inset-0"></div>
       <div className="absolute bottom-0 h-10 w-full bg-linear-to-b from-transparent to-white"></div>
-      <div className="flex justify-center mb-4">
-        <div className="relative inline-flex items-center justify-center rounded-[18px] p-[1px] overflow-hidden">
-          <div className="absolute inset-0 rounded-[18px] bg-gradient-to-r from-pink-600 via-green-400 to-red-600 bg-[length:300%_300%] animate-[moveBorder_3s_linear_infinite]"></div>
-          <a className="rounded-[18px] z-10" href="https://peerlist.io/alokcodes/project/track-my-course--youtube-playlist-tracker" target="_blank" rel="noreferrer">
-            <img
-              src="https://peerlist.io/api/v1/projects/embed/PRJHEOG6ME8KDELNEIOP6GQ6O9BGGM?showUpvote=true&theme=light"
-              alt="Track My Course - Youtube Playlist Tracker"
-              style={{ height: "72px" }}
-            />
-          </a>
-        </div>
-      </div>
+
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 sm:px-6 lg:flex-row lg:px-8">
         {/* Left side: Text Content */}
         <div className="flex-1 text-center lg:min-w-lg lg:text-left">
