@@ -6,8 +6,9 @@ The website provides information about the extension’s features, progress trac
 
 ## Get the Extension
 
-Install Track My Course from the Chrome Web Store:  
-[Add to Chrome](https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin)
+Install Track My Course:  
+[Add to Chrome](https://chromewebstore.google.com/detail/trackmycourse-track-youtu/eojbembojnleniamokihimgjikmpahin)  
+[Add to Firefox](https://addons.mozilla.org/en-US/firefox/addon/trackmycourse/)
 
 ## More Information
 
