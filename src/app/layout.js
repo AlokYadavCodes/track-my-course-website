@@ -30,11 +30,11 @@ export const metadata = {
     title: "TrackMyCourse",
     description:
       "Turn YouTube playlists into structured, trackable learning courses.",
-    url: "https://www.trackmycourse.online",
+    url: "https://www.trackmycourse.in",
     siteName: "TrackMyCourse",
     images: [
       {
-        url: "https://www.trackmycourse.online/og.png",
+        url: "https://www.trackmycourse.in/og.png",
         width: 1200,
         height: 630,
       },
@@ -51,7 +51,7 @@ export const metadata = {
     creator: "@alokcodes",
     images: [
       {
-        url: "https://www.trackmycourse.online/og.png",
+        url: "https://www.trackmycourse.in/og.png",
         alt: "TrackMyCourse logo",
         width: 1200,
         height: 630,

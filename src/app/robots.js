@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.trackmycourse.online/sitemap.xml',
+    sitemap: 'https://www.trackmycourse.in/sitemap.xml',
   }
 }
