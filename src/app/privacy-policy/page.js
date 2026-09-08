@@ -1,5 +1,11 @@
 import React from "react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-slate-50">
@@ -63,7 +69,7 @@ export default function PrivacyPolicyPage() {
               Questions?
             </h2>
             <p className="mt-2 text-gray-600 md:text-lg">
-              If you have any questions regarding your privacy, please reach out via email at 
+              If you have any questions regarding your privacy, please reach out via email at
               <a href="mailto:trackmycourse1@gmail.com" className="text-red-600 hover:underline"> trackmycourse1@gmail.com</a>.
             </p>
           </div>

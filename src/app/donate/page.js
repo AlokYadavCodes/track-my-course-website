@@ -2,12 +2,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  alternates: {
+    canonical: "/donate",
+  },
+};
+
 export default function SupportPage() {
   return (
     <main className="min-h-screen bg-slate-50">
       <h1 className=" px-4 pt-28 text-3xl md:text-4xl font-bold text-center font-poppins text-gray-900 mb-12">
-  Support Track My Course
-</h1>
+        Support Track My Course
+      </h1>
 
 
       {/* Donation Options */}

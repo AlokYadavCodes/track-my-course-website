@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Work_Sans, Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.trackmycourse.in"),
   title: "Track My Course: YouTube Playlist Progress Tracker",
   description:
     "TrackMyCourse is a YouTube playlist tracker that turns playlists into structured online learning courses. Track your video progress, manage study playlists, and boost your learning efficiently.",
@@ -67,6 +69,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

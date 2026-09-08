@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
+export const metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <main className="bg-slate-50">

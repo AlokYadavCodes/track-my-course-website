@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
+export const metadata = {
+  alternates: {
+    canonical: "/contribute",
+  },
+};
+
 export default function ContributePage() {
   return (
     <main className="min-h-screen bg-slate-50">
